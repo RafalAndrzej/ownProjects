@@ -1,0 +1,50 @@
+.header {
+   grid-column: fullSide-start / fullSide-end;
+   grid-row: navigation-start / navigation-end;
+
+   grid-template-columns: 1fr minmax(1260px, 1fr) 1fr;
+   display: grid;
+   grid-template-rows: 60px;
+   grid-template-areas: 'asideLeft main asideRight';
+}
+
+@media screen and (min-width: 1260px) {
+   .header {
+      grid-template-columns: 1fr minmax(1260px, 1600px) 1fr;
+   }
+}
+@media screen and (max-width: 1260px) {
+   .header {
+      grid-template-columns: minmax(360px, 1fr);
+      grid-template-areas: 'main';
+   }
+}
+
+.header aside {
+   grid-area: asideLeft;
+   background-color: var(--sideBgc);
+}
+
+.header nav {
+   grid-area: main;
+
+   display: grid;
+   grid-template-columns:
+      minmax(90px, 1fr)
+      repeat(2, minmax(90px, 1fr))
+      minmax(90px, 1fr);
+
+   grid-template-areas: 'hamburger menuList menuList logo';
+   height: 60px;
+
+   color: var(--text-primary);
+}
+
+.mobile-nav {
+   position: fixed;
+   bottom: 0;
+   background-color: var(--sideBgc);
+   font-size: 0.8rem;
+   width: 100%;
+   z-index: 20;
+}

@@ -1,0 +1,22 @@
+.image {
+   position: relative;
+   overflow: hidden;
+   flex-grow: 3;
+}
+
+.image img {
+   object-fit: cover;
+   object-position: center;
+}
+
+.slider {
+   flex-grow: 1;
+}
+
+.content {
+   display: flex;
+   flex-direction: column;
+   row-gap: 1rem;
+   padding: 0.5rem;
+   height: 100%;
+}

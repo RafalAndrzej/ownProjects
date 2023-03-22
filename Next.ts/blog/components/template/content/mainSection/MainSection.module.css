@@ -1,0 +1,20 @@
+.mainSection {
+   grid-area: main;
+
+   position: relative;
+   display: flex;
+   row-gap: 1rem;
+   flex-direction: column;
+   margin-bottom: 1rem;
+
+   color: var(--text-primary);
+}
+
+.mainSection h2 {
+   text-align: center;
+   padding: 1.5rem 0;
+}
+
+.mainSection h3 {
+   text-align: center;
+}

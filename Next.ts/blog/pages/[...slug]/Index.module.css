@@ -1,0 +1,59 @@
+.emptyContainer {
+   position: relative;
+   flex-grow: 1;
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   row-gap: 2rem;
+   overflow: hidden;
+}
+
+.emptyContainer p {
+   font-size: 1.8rem;
+}
+
+.link {
+   width: max-content;
+   font-weight: normal;
+   align-self: center;
+}
+
+.link button {
+   background-color: var(--sideBgc);
+}
+
+.allPageContent {
+   align-self: center;
+   margin: auto 0;
+   width: 90%;
+   border-radius: 1rem;
+   overflow: hidden;
+
+   display: flex;
+   flex-direction: column;
+   row-gap: 1rem;
+}
+
+/* slug.length > 1 */
+.allPageContent div {
+   display: flex;
+   flex-direction: column;
+   row-gap: 1rem;
+   position: relative;
+   text-align: right;
+   min-height: 30vh;
+}
+
+.allPageContent h1 {
+   text-align: center;
+}
+
+.allPageContent p:first-of-type {
+   text-align: justify;
+}
+.allPageContent p:last-of-type {
+   order: -1;
+   font-weight: bold;
+}

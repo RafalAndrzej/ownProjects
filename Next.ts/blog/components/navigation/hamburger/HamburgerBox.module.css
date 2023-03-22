@@ -1,0 +1,35 @@
+.box {
+   --svg-color: #f1f1f1;
+
+   grid-area: hamburger;
+
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   background-color: var(--sideBgc);
+
+   overflow: hidden;
+}
+
+.menu-visible {
+   cursor: pointer;
+}
+.menu-visible .line {
+   transition: transform 0.2s ease-in;
+   transform-origin: center;
+}
+
+.menu-visible .line.top {
+   transform: rotate(45deg);
+}
+.menu-visible .line.bottom {
+   transform: rotate(-45deg);
+}
+
+.btn {
+   padding: 0.5rem 0.3rem;
+}
+
+.svg {
+   max-width: 30px;
+}

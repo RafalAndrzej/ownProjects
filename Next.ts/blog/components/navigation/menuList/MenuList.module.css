@@ -1,0 +1,22 @@
+.list {
+   grid-area: menuList;
+
+   display: flex;
+   flex-wrap: nowrap;
+   justify-content: space-evenly;
+   align-items: center;
+   column-gap: 10px;
+
+   width: 100%;
+   padding: 0 10px;
+
+   list-style-type: none;
+   text-align: center;
+}
+
+.list a:link,
+.list a:visited,
+.list a:active {
+   color: currentColor;
+   text-decoration: none;
+}

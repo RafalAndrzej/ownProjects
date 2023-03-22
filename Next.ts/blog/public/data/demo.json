@@ -1,0 +1,199 @@
+{
+   "menu": [
+      { "id": "menuId-1", "title": "O nas", "href": "/o-nas" },
+      { "id": "menuId-2", "title": "Organy Statutowe", "href": "/organy-statutowe" },
+      { "id": "menuId-3", "title": "Kontakt", "href": "/kontakt" },
+      { "id": "menuId-4", "title": "Oferty Partnerów", "href": "/oferty-partnerow" },
+      { "id": "menuId-5", "title": "Preliminarz roczny", "href": "/preliminarz-roczny" },
+      { "id": "menuId-6", "title": "Wydarzenia", "href": "/wydarzenia" },
+      { "id": "menuId-7", "title": "Turystyka", "href": "/turystyka" },
+      { "id": "menuId-8", "title": "Świadczenia, wnioski do pobrania", "href": "/do-pobrania" },
+      { "id": "menuId-9", "title": "Komisja socjalna", "href": "/komisja-socjalna" },
+      { "id": "menuId-10", "title": "Tablica ogłoszeń", "href": "/ogloszenia" },
+      {
+         "id": "menuId-11",
+         "title": "Zgłoś nowego członka związku",
+         "href": "/zglos-nowego-czlonka"
+      },
+      { "id": "menuId-12", "title": "Forum zarządu", "href": "/forum-zarzadu" }
+   ],
+   "content": [
+      {
+         "turystyka": [
+            {
+               "id": "turystyka-15645t",
+               "date": "2023-09-10",
+               "description": "Moje lorem 3333333 ----- Lorem ipsum dolor sit amet, consectetur adipisicing, Lorem ipsum dolor sit amet, consectetur adipisicing, Lorem ipsum dolor sit amet, consectetur adipisicing, Lorem ipsum dolor sit amet, consectetur adipisicing.",
+               "image": "/images/wydarzenia/wydarzenie-01.jpg",
+               "title": "Tytuł: Turystyka - 1"
+            },
+            {
+               "id": "turystyka-2444",
+               "date": "2023-10-10",
+               "description": "Moje lorem 222222 ----- Lorem ipsum dolor sit amet, consectetur adipisicing, Lorem ipsum dolor sit amet, consectetur adipisicing, Lorem ipsum dolor sit amet, consectetur adipisicing, Lorem ipsum dolor sit amet, consectetur adipisicing.",
+               "image": "/images/wydarzenia/wydarzenie-02.jpg",
+               "title": "Tytuł: Turystyka - 2"
+            },
+            {
+               "id": "turystyka-55553",
+               "date": "2022-12-30",
+               "description": "Moje lorem 1111111 ----- Lorem ipsum dolor sit amet, consectetur adipisicing, Lorem ipsum dolor sit amet, consectetur adipisicing, Lorem ipsum dolor sit amet, consectetur adipisicing, Lorem ipsum dolor sit amet, consectetur adipisicing.",
+               "image": "/images/wydarzenia/wydarzenie-03.jpg",
+               "title": "Tytuł: Turystyka - 3"
+            },
+            {
+               "id": "oferty-partnerow-666",
+               "date": "2021-12-30",
+               "description": "Moje lorem 1111111 ----- Lorem ipsum dolor sit amet, consectetur adipisicing, Lorem ipsum dolor sit amet, consectetur adipisicing, Lorem ipsum dolor sit amet, consectetur adipisicing, Lorem ipsum dolor sit amet, consectetur adipisicing.",
+               "image": "/images/wydarzenia/wydarzenie-04.jpg",
+               "title": "Tytuł: oferty-partnerow - 3"
+            }
+         ]
+      },
+      {
+         "ogloszenia": [
+            {
+               "id": "ogloszenia-1",
+               "date": "2022-12-10",
+               "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore porro provident eos numquam totam quasi maxime iure. Nemo, similique architecto!",
+               "image": "/images/wydarzenia/wydarzenie-01.jpg",
+               "IsFavorite": true,
+               "title": "Tytuł: Title - 1",
+               "isFeature": true
+            },
+            {
+               "id": "ogloszenia-2",
+               "date": "2022-12-20",
+               "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore porro provident eos numquam totam quasi maxime iure. Nemo, similique architecto!",
+               "image": "/images/wydarzenia/wydarzenie-02.jpg",
+               "IsFavorite": true,
+               "title": "Tytuł: Title - 2",
+               "isFeature": true
+            },
+            {
+               "id": "ogloszenia-3",
+               "date": "2022-12-30",
+               "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore porro provident eos numquam totam quasi maxime iure. Nemo, similique architecto!",
+               "image": "/images/wydarzenia/wydarzenie-03.jpg",
+               "IsFavorite": true,
+               "title": "Tytuł: Title - 3",
+               "isFeature": true
+            },
+            {
+               "id": "ogloszenia-4",
+               "date": "2022-11-10",
+               "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore porro provident eos numquam totam quasi maxime iure. Nemo, similique architecto!",
+               "image": "/images/wydarzenia/wydarzenie-04.jpg",
+               "IsFavorite": true,
+               "title": "Tytuł: Title - 4",
+               "isFeature": true
+            },
+            {
+               "id": "ogloszenia-5",
+               "date": "2022-09-10",
+               "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore porro provident eos numquam totam quasi maxime iure. Nemo, similique architecto!",
+               "image": "/images/wydarzenia/wydarzenie-02.jpg",
+               "IsFavorite": true,
+               "title": "Tytuł: Title - 5",
+               "isFeature": true
+            },
+            {
+               "id": "ogloszenia-6",
+               "date": "2022-2-10",
+               "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore porro provident eos numquam totam quasi maxime iure. Nemo, similique architecto!",
+               "image": "/images/wydarzenia/wydarzenie-04.jpg",
+               "IsFavorite": true,
+               "title": "Tytuł: Title - 6",
+               "isFeature": true
+            },
+            {
+               "id": "ogloszenia-7",
+               "date": "2022-01-10",
+               "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore porro provident eos numquam totam quasi maxime iure. Nemo, similique architecto!",
+               "image": "/images/wydarzenia/wydarzenie-02.jpg",
+               "IsFavorite": true,
+               "title": "Tytuł: Title - 7",
+               "isFeature": true
+            }
+         ]
+      },
+      {
+         "oferty-partnerow": [
+            {
+               "id": "oferty-partnerow-1",
+               "date": "2022-12-10",
+               "description": "Moje lorem 3333333 ----- Lorem ipsum dolor sit amet, consectetur adipisicing, Lorem ipsum dolor sit amet, consectetur adipisicing, Lorem ipsum dolor sit amet, consectetur adipisicing, Lorem ipsum dolor sit amet, consectetur adipisicing.",
+               "image": "/images/wydarzenia/wydarzenie-04.jpg",
+               "title": "Tytuł: oferty-partnerow - 1"
+            },
+            {
+               "id": "oferty-partnerow-1222",
+               "date": "2022-10-10",
+               "description": "Moje lorem 222222 ----- Lorem ipsum dolor sit amet, consectetur adipisicing, Lorem ipsum dolor sit amet, consectetur adipisicing, Lorem ipsum dolor sit amet, consectetur adipisicing, Lorem ipsum dolor sit amet, consectetur adipisicing.",
+               "image": "/images/wydarzenia/wydarzenie-02.jpg",
+               "title": "Tytuł: oferty-partnerow - 2"
+            },
+            {
+               "id": "oferty-partnerow-3333",
+               "date": "2022-12-30",
+               "description": "Moje lorem 1111111 ----- Lorem ipsum dolor sit amet, consectetur adipisicing, Lorem ipsum dolor sit amet, consectetur adipisicing, Lorem ipsum dolor sit amet, consectetur adipisicing, Lorem ipsum dolor sit amet, consectetur adipisicing.",
+               "image": "/images/wydarzenia/wydarzenie-03.jpg",
+               "title": "Tytuł: oferty-partnerow - 3"
+            },
+            {
+               "id": "oferty-partnerow-444",
+               "date": "2022-12-30",
+               "description": "Moje lorem 1111111 ----- Lorem ipsum dolor sit amet, consectetur adipisicing, Lorem ipsum dolor sit amet, consectetur adipisicing, Lorem ipsum dolor sit amet, consectetur adipisicing, Lorem ipsum dolor sit amet, consectetur adipisicing.",
+               "image": "/images/wydarzenia/wydarzenie-03.jpg",
+               "title": "Tytuł: oferty-partnerow - 3"
+            },
+            {
+               "id": "oferty-partnerow-666",
+               "date": "2022-12-30",
+               "description": "Moje lorem 1111111 ----- Lorem ipsum dolor sit amet, consectetur adipisicing, Lorem ipsum dolor sit amet, consectetur adipisicing, Lorem ipsum dolor sit amet, consectetur adipisicing, Lorem ipsum dolor sit amet, consectetur adipisicing.",
+               "image": "/images/wydarzenia/wydarzenie-04.jpg",
+               "title": "Tytuł: oferty-partnerow - 3"
+            }
+         ]
+      },
+      {
+         "preliminarz-roczny": [
+            {
+               "id": "preliminarz-roczny-1",
+               "date": "2022-12-10",
+               "description": "Moje lorem 3333333 ----- Lorem ipsum dolor sit amet, consectetur adipisicing, Lorem ipsum dolor sit amet, consectetur adipisicing, Lorem ipsum dolor sit amet, consectetur adipisicing, Lorem ipsum dolor sit amet, consectetur adipisicing.",
+               "image": "/images/wydarzenia/wydarzenie-01.jpg",
+               "title": "Tytuł: preliminarz-roczny - 1"
+            },
+            {
+               "id": "preliminarz-roczny-1222",
+               "date": "2022-10-10",
+               "description": "Moje lorem 222222 ----- Lorem ipsum dolor sit amet, consectetur adipisicing, Lorem ipsum dolor sit amet, consectetur adipisicing, Lorem ipsum dolor sit amet, consectetur adipisicing, Lorem ipsum dolor sit amet, consectetur adipisicing.",
+               "image": "/images/wydarzenia/wydarzenie-02.jpg",
+               "title": "Tytuł: preliminarz-roczny - 2"
+            },
+            {
+               "id": "preliminarz-roczny-3333",
+               "date": "2022-12-30",
+               "description": "Moje lorem 1111111 ----- Lorem ipsum dolor sit amet, consectetur adipisicing, Lorem ipsum dolor sit amet, consectetur adipisicing, Lorem ipsum dolor sit amet, consectetur adipisicing, Lorem ipsum dolor sit amet, consectetur adipisicing.",
+               "image": "/images/wydarzenia/wydarzenie-03.jpg",
+               "title": "Tytuł: preliminarz-roczny - 3"
+            }
+         ]
+      }
+   ],
+   "slider": [
+      { "id": "slider-1", "src": "/images/index/slider/slider-1.jpg", "nazwaFirmy": "Firma - 1" },
+      { "id": "slider-2", "src": "/images/index/slider/slider-2.jpg", "nazwaFirmy": "Firma - 2" },
+      { "id": "slider-3", "src": "/images/index/slider/slider-3.jpg", "nazwaFirmy": "Firma - 3" },
+      { "id": "slider-4", "src": "/images/index/slider/slider-4.jpg", "nazwaFirmy": "Firma - 4" },
+      { "id": "slider-5", "src": "/images/index/slider/slider-5.jpg", "nazwaFirmy": "Firma - 5" },
+      { "id": "slider-6", "src": "/images/index/slider/slider-6.jpg", "nazwaFirmy": "Firma - 6" },
+      { "id": "slider-7", "src": "/images/index/slider/slider-7.jpg", "nazwaFirmy": "Firma - 7" },
+      { "id": "slider-8", "src": "/images/index/slider/slider-8.jpg", "nazwaFirmy": "Firma - 8" },
+      { "id": "slider-9", "src": "/images/index/slider/slider-9.jpg", "nazwaFirmy": "Firma - 9" },
+      { "id": "slider-10", "src": "/images/index/slider/slider-10.jpg", "nazwaFirmy": "Firma - 10" },
+      { "id": "slider-11", "src": "/images/index/slider/slider-11.jpg", "nazwaFirmy": "Firma - 11" },
+      { "id": "slider-12", "src": "/images/index/slider/slider-12.jpg", "nazwaFirmy": "Firma - 12" }
+   ]
+}

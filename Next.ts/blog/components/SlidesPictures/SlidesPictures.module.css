@@ -1,0 +1,48 @@
+.box {
+   display: flex;
+   align-items: center;
+   flex-wrap: nowrap;
+   column-gap: 1rem;
+   height: 100%;
+}
+.box div {
+   position: relative;
+   flex-grow: 1;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   height: 80%;
+   border-radius: 1rem;
+   overflow: hidden;
+}
+.box span {
+   display: none;
+}
+
+.box div:nth-of-type(3) {
+   flex-grow: 2;
+   height: 100%;
+}
+
+.box div:nth-of-type(3) span {
+   display: block;
+   z-index: 2;
+   position: absolute;
+   bottom: 5px;
+   color: white;
+   font-weight: bold;
+   font-size: 1.5rem;
+}
+
+@media screen and (max-width: 1000px) {
+   .box div:nth-of-type(1),
+   .box div:nth-of-type(5) {
+      display: none;
+   }
+}
+@media screen and (max-width: 360px) {
+   .box div:not(:nth-of-type(3)) {
+      display: none;
+   }
+}

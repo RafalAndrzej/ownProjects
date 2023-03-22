@@ -1,0 +1,18 @@
+.dots {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   column-gap: 0.5rem;
+}
+.dots span {
+   cursor: pointer;
+   width: 15px;
+   height: 15px;
+   border-radius: 50%;
+   background-color: transparent;
+   border: 2px solid var(--sideBgc);
+}
+
+.active {
+   background-color: var(--sideBgc) !important;
+}

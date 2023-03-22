@@ -1,0 +1,26 @@
+:root {
+   --background: #f1f1f1;
+   --text-primary: #17202a;
+   --text-secondary: #8d8d8d;
+   --sideBgc: #ffd700;
+}
+
+[dark-scheme='true'] {
+   --background: #17202a;
+   --text-primary: #f1f1f1;
+   --text-secondary: #5a5a5a;
+   --sideBgc: #c4a500;
+}
+
+body {
+   font-family: 'Lato', sans-serif;
+   background-color: var(--background);
+}
+
+*,
+*::after,
+*::before {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}

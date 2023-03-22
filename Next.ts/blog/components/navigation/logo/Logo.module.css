@@ -1,0 +1,20 @@
+.logo {
+   display: flex;
+   flex-wrap: nowrap;
+   align-items: center;
+   justify-content: space-evenly;
+   column-gap: 5px;
+   overflow: hidden;
+}
+
+.logo img,
+.logo a:link,
+.logo a:visited,
+.logo a:active {
+   height: 50px;
+   width: 50px;
+   min-width: 40px;
+   min-height: 40px;
+   cursor: pointer;
+   position: relative;
+}

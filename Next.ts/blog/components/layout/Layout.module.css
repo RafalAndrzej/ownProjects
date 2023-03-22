@@ -1,0 +1,27 @@
+.wrapper {
+   display: grid;
+   grid-template-columns:
+      [fullSide-start] minmax(0px, 1fr) [mainSide-start] repeat(4, [col-start] minmax(90px, 400px) [col-end])
+      [mainSide-end] minmax(0px, 1fr) [fullSide-end];
+   grid-template-rows:
+      [navigation-start] 60px [navigation-end rest-start] minmax(calc(100vh - 100px), max-content)
+      [rest-end];
+}
+
+.wrapper-mobile {
+   grid-template-rows: [rest-start] minmax(calc(100vh - 60px), min-content) [rest-end navigation-start] 60px [navigation-end];
+}
+
+.main {
+   grid-column: fullSide-start / fullSide-end;
+   grid-row: rest-start / rest-end;
+
+   display: grid;
+   grid-template-columns: minmax(0px, 1fr) repeat(4, minmax(90px, 400px)) minmax(0px, 1fr);
+   grid-template-rows: 1fr;
+   grid-template-areas: 'beginPage asideMenu main main main restPage';
+}
+
+.main.mobilViev {
+   grid-template-areas: 'beginPage main main main main restPage';
+}
