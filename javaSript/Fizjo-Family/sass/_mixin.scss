@@ -1,0 +1,103 @@
+@mixin respond($breakpoint) {
+   @if $breakpoint == XLdesktop {
+      @media only screen and (min-width: 112.5em) {
+         @content;
+      }
+   }
+   @if $breakpoint == tablet {
+      @media only screen and (max-width: 81.1875em) {
+         @content;
+      }
+   }
+   @if $breakpoint == phone-landscape {
+      @media only screen and (max-width: 37.5em) {
+         @content;
+      }
+   }
+   @if $breakpoint == phone-portrait {
+      @media only screen and (max-width: 25em) {
+         @content;
+      }
+   }
+}
+@mixin hrefLink {
+   &:link,
+   &:visited {
+      color: currentColor;
+      text-decoration: none;
+   }
+}
+@mixin buttonAfter {
+   border: none;
+   width: max-content;
+   background-color: var(--color-orange);
+   padding: 0.5rem 1rem;
+   border-radius: 2rem;
+   cursor: pointer;
+   color: var(--color-white);
+   position: relative;
+   &::after {
+      content: '';
+      width: 100%;
+      height: 100%;
+      border-radius: 2rem;
+      background-color: var(--color-orange);
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: -1;
+   }
+}
+@mixin buttonAfter-small {
+   display: flex;
+   align-items: center;
+   width: max-content;
+   border: 1px solid var(--color-orange);
+   background-color: transparent;
+   padding: 0.5rem 1rem;
+   border-radius: 2rem;
+   cursor: pointer;
+   position: relative;
+   &::after {
+      content: '';
+      width: 100%;
+      height: 100%;
+      border-radius: 2rem;
+      border: 0px solid var(--color-orange);
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: -1;
+   }
+   &::before {
+      content: '';
+
+      -webkit-mask-repeat: no-repeat;
+      -webkit-mask-position: center center;
+
+      mask-repeat: no-repeat;
+      mask-position: center center;
+      display: inline-block;
+      width: 2rem;
+      height: 2rem;
+      margin-right: 0.5rem;
+      background-color: var(--color-orange);
+   }
+   &-up::before {
+      -webkit-mask: url(../img/ikony-basic-wersja-4/icon-sample-004-top.svg);
+      mask: url(../img/ikony-basic-wersja-4/icon-sample-004-top.svg);
+   }
+   &-down::before {
+      -webkit-mask: url(../img/ikony-basic-wersja-4/icon-sample-004-top.svg);
+      mask: url(../img/ikony-basic-wersja-4/icon-sample-004-top.svg);
+      transform: rotate(-180deg);
+   }
+}
+@mixin center {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}

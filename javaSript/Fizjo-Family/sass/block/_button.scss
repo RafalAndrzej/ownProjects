@@ -1,0 +1,46 @@
+.button {
+   font-size: 1.8rem;
+   @include buttonAfter;
+   @include hrefLink;
+   &:hover::after {
+      transition: all 0.5s;
+      transform: scale(1.5);
+      opacity: 0;
+      visibility: hidden;
+      z-index: 10;
+   }
+}
+.button-small {
+   font-size: 1.8rem;
+   color: black;
+   @include buttonAfter-small;
+   @include hrefLink;
+   &:hover::after {
+      border: 1px solid var(--color-orange);
+      transition: opacity 0.8s, transform 0.8s, border 0s 0.1s;
+      transform: scale(1.5);
+      opacity: 0;
+      z-index: 10;
+   }
+}
+.button-mobil {
+   @media screen and (min-width: 700px) {
+      display: none;
+   }
+   &__in {
+      @media screen and (max-width: 700px) {
+         position: absolute;
+         top: 2rem;
+         right: 2rem;
+         z-index: 100;
+      }
+   }
+   &__out {
+      @media screen and (max-width: 700px) {
+         position: fixed;
+         top: 12vh;
+         right: 12vw;
+         z-index: 100;
+      }
+   }
+}

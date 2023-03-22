@@ -1,0 +1,247 @@
+.footer {
+   position: relative;
+   background-color: var(--color-darkWhite);
+   margin-top: 8rem;
+   padding-bottom: 2rem;
+   &__wrapper {
+      display: grid;
+      align-items: center;
+
+      @media screen and (min-width: 56.25em) {
+         grid-template-rows: min-content max-content min-content;
+         grid-template-columns: 1fr min-content 1fr;
+         grid-template-areas:
+            'nazwaFirmy logo mapaStrony'
+            'text logo anchor'
+            'social logo anchor';
+
+         grid-column-gap: 5rem;
+         grid-row-gap: 3rem;
+      }
+      @media screen and (max-width: 56.25em) {
+         grid-template-columns: repeat(2, minmax(min-content, 1fr)) 2fr;
+         grid-template-rows: min-content max-content repeat(2, min-content);
+         grid-template-areas:
+            'logo nazwaFirmy nazwaFirmy'
+            'logo social anchor'
+            'text text text';
+
+         justify-items: center;
+         grid-column-gap: 1.5rem;
+         grid-row-gap: 2.5rem;
+      }
+      @media screen and (max-width: 31.25em) {
+         grid-template-columns: repeat(3, minmax(min-content, 1fr));
+         grid-template-rows: min-content max-content repeat(2, min-content);
+         grid-template-areas:
+            'logo nazwaFirmy nazwaFirmy'
+            'logo text text'
+            'anchor anchor social';
+      }
+
+      max-width: 100rem;
+      margin: 0 auto;
+      padding: 2rem;
+
+      &--h5 {
+         grid-area: nazwaFirmy;
+         @media screen and (min-width: 56.25em) {
+            justify-self: end;
+         }
+      }
+      &--h6 {
+         grid-area: mapaStrony;
+         align-self: start;
+         @media screen and (max-width: 56.25em) {
+            display: none;
+         }
+      }
+      &--h5,
+      &--h6 {
+         font-size: 3rem;
+         width: max-content;
+
+         position: relative;
+         &::after {
+            content: '';
+            height: 2px;
+            width: 15rem;
+            background-color: var(--color-orange);
+            display: block;
+            position: absolute;
+            right: 0;
+            bottom: -1.5rem;
+            @media screen and (max-width: 56.25em) {
+               bottom: -1.5rem;
+            }
+         }
+      }
+      &--h6::after {
+         right: unset;
+         left: 0;
+      }
+      &--text {
+         grid-area: text;
+         span {
+            display: block;
+            &::first-letter {
+               color: var(--color-orange);
+               font-weight: bold;
+            }
+            &:not(:last-of-type) {
+               margin-bottom: 0.5rem;
+            }
+         }
+         &::after {
+            @media screen and (max-width: 31.25em) {
+               content: '';
+               height: 2px;
+               width: 15rem;
+               background-color: var(--color-orange);
+               display: block;
+               position: absolute;
+               left: 50%;
+               transform: translateX(-50%);
+               bottom: -1.5rem;
+            }
+         }
+         @media screen and (min-width: 56.25em) {
+            justify-self: end;
+            text-align: right;
+         }
+         font-size: 2.2rem;
+         font-weight: 300;
+         position: relative;
+      }
+      &--box {
+         grid-area: social;
+         @media screen and (min-width: 56.25em) {
+            justify-self: end;
+            align-self: start;
+         }
+         display: flex;
+         @media screen and (max-width: 56.25em) {
+            flex-direction: column;
+            row-gap: 2rem;
+         }
+         flex-wrap: nowrap;
+         align-items: flex-start;
+         column-gap: 2rem;
+
+         position: relative;
+         &-link {
+            @include hrefLink;
+            &__icon {
+               display: block;
+               width: 5rem;
+               height: 5rem;
+               fill: var(--color-orange);
+               transition: all 0.3s;
+            }
+            @media (hover: hover) {
+               &:hover .footer__wrapper--box-link__icon {
+                  transform: scale(1.2);
+               }
+            }
+            @media (hover: none) {
+               &:focus-visible .footer__wrapper--box-link__icon {
+                  transform: scale(1.2);
+               }
+            }
+         }
+         @media screen and (min-width: 56.25em) {
+            &::after {
+               content: '';
+               height: 2px;
+               width: 15rem;
+               background-color: var(--color-orange);
+               display: block;
+               position: absolute;
+               right: 0;
+               top: -1.5rem;
+            }
+         }
+      }
+      &--logo {
+         grid-area: logo;
+
+         display: block;
+         width: 12.5rem;
+         height: 12.5rem;
+      }
+      &--anchor {
+         grid-area: anchor;
+         @media screen and (min-width: 31.25em) {
+            justify-self: start;
+         }
+         &-list {
+            list-style-type: none;
+            & :not(:last-child) {
+               margin-bottom: 1rem;
+            }
+         }
+         &-item {
+            color: currentColor;
+            cursor: pointer;
+            &--link {
+               @include hrefLink;
+               display: flex;
+               flex-wrap: nowrap;
+               align-items: center;
+               column-gap: 0.5rem;
+
+               font-size: 2.2rem;
+
+               &::before {
+                  content: '';
+                  display: block;
+                  width: 2.5rem;
+                  height: 2.5rem;
+                  background-color: var(--color-orange);
+               }
+               &-home::before {
+                  -webkit-mask: url(../img/ikony-basic-wersja-4/icon-sample-004-home.svg);
+                  mask: url(../img/ikony-basic-wersja-4/icon-sample-004-home.svg);
+               }
+               &-oFirmie::before {
+                  -webkit-mask: url(../img/ikony-basic-wersja-4/icon-sample-004-o-firmie.svg);
+                  mask: url(../img/ikony-basic-wersja-4/icon-sample-004-o-firmie.svg);
+               }
+               &-oferta::before {
+                  -webkit-mask: url(../img/ikony-basic-wersja-4/icon-sample-004-oferta.svg);
+                  mask: url(../img/ikony-basic-wersja-4/icon-sample-004-oferta.svg);
+               }
+               &-galeria::before {
+                  -webkit-mask: url(../img/ikony-basic-wersja-4/icon-sample-004-galeria.svg);
+                  mask: url(../img/ikony-basic-wersja-4/icon-sample-004-galeria.svg);
+               }
+               &-współpraca::before {
+                  -webkit-mask: url(../img/ikony-basic-wersja-4/icon-sample-004-wspolpraca.svg);
+                  mask: url(../img/ikony-basic-wersja-4/icon-sample-004-wspolpraca.svg);
+               }
+               &-kontakt::before {
+                  -webkit-mask: url(../img/ikony-basic-wersja-4/icon-sample-004-kontakt.svg);
+                  mask: url(../img/ikony-basic-wersja-4/icon-sample-004-kontakt.svg);
+               }
+
+               span {
+                  transition: margin 0.3s;
+               }
+               @media (hover: hover) {
+                  &:hover.footer__wrapper--anchor-item--link span {
+                     margin-left: 1rem;
+                  }
+                  &:focus-visible.footer__wrapper--anchor-item--link span {
+                     border-bottom: 2px solid green;
+                  }
+               }
+               @media (hover: none) {
+                  &:focus-visible.footer__wrapper--anchor-item--link span {
+                     border-bottom: 2px solid green;
+                  }
+               }
+            }
+         }
+      }
+   }
+}

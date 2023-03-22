@@ -1,0 +1,31 @@
+.aside {
+   background-color: black;
+   padding: 1rem 0;
+   &__link {
+      display: flex;
+      align-items: center;
+      column-gap: 2rem;
+      max-width: max-content;
+      margin: 0 auto;
+      @include hrefLink;
+      @media screen and (hover: hover) {
+         &:hover .aside__logo {
+            transform: scale(1.2);
+         }
+      }
+   }
+   color: var(--color-white);
+   text-align: center;
+   &__logo {
+      display: block;
+      height: 100%;
+      width: 8rem;
+      transition: transform 0.3s;
+   }
+   &__text {
+      &--opis {
+         font-size: 1.5rem;
+         margin-bottom: 0.5rem;
+      }
+   }
+}

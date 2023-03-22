@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Fizjo-Family - aktualności</title>
+      <meta name="description" content="" />
+      <meta name="keywords" content="" />
+      <link rel="stylesheet" href="css/style-dev.css" />
+
+      <link rel="shortcut icon" href="img/favicon/favicon-fizjo-family.png" />
+
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap"
+         rel="stylesheet" />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap"
+         rel="stylesheet" />
+
+      <script defer src="js/main.js"></script>
+      <script defer src="js/zmienneELementy.js"></script>
+      <script defer src="js/aktualnosci.js"></script>
+   </head>
+   <body>
+      <header>
+         <nav>
+            <ul class="nav nav__hidden">
+               <li class="nav__list">
+                  <a class="nav__link" data-page="index" href="http://127.0.0.1:1400">Strona główna</a>
+               </li>
+               <li class="nav__list">
+                  <a class="nav__link" href="http://127.0.0.1:1400/kadra.html" data-page="kadra">Kadra</a>
+               </li>
+               <li class="nav__list">
+                  <a class="nav__link" href="http://127.0.0.1:1400/oferta.html" data-page="oferta">Oferta</a>
+               </li>
+               <li class="nav__list">
+                  <a class="nav__link" href="http://127.0.0.1:1400/cennik.html" data-page="cennik">Cennik</a>
+               </li>
+               <li class="nav__list">
+                  <a class="nav__link" href="http://127.0.0.1:1400/aktualnosci.html" data-page="aktualnosci"
+                     >Aktualności</a
+                  >
+               </li>
+               <li class="nav__list">
+                  <a class="nav__link" data-page="kontakt" href="">Kontakt</a>
+               </li>
+            </ul>
+            <button class="button button-mobil button-mobil__in">Menu</button>
+            <button class="button button-mobil button-mobil__out nav__display">X</button>
+         </nav>
+         <div class="header">
+            <div class="header__wrapper header__wrapperKadra">
+               <img
+                  src="./img/index/fizjofamily-logo-circle.svg"
+                  alt=""
+                  class="header__wrapper--nazwa__img" />
+               <div class="header__wrapper--nazwa__text">
+                  <h1 class="heading-1__header heading-1__headerKadra">Aktualności</h1>
+               </div>
+            </div>
+            <img class="header__main-img" src="./img/index/galeria/galeria-10.jpg" alt="" />
+            <img src="img/index/fizjofamily-shape-header.svg" alt="" class="header__img" />
+         </div>
+      </header>
+      <section class="aktualnosci">
+         <h2 class="heading-2__aktualnosci heading-2__aktualnosci--index">Najnowsze wpisy</h2>
+         <div id="aktualnosc-1" class="aktualnosci__box sekcjeGlowne">
+            <div class="aktualnosci__box--left">
+               <img src="img/aktualności/mlodySportowiec.jpg" alt="" class="aktualnosci__box--left-img" />
+            </div>
+            <div class="aktualnosci__box--right">
+               <p class="aktualnosci__box--data">9 grudnia 2022</p>
+               <h3 class="heading-3__aktualnosci">
+                  9 sytuacji kiedy należy udać się do fizjoterapeuty z Twoim Młodym Sportowcem
+               </h3>
+               <ul class="aktualnosci__box--list">
+                  <li class="aktualnosci__box--list-item">
+                     <h3 class="heading-3__aktualnosci">Okres skoku wzrostowego</h3>
+                     <p class="aktualnosci__box--list--item__text">
+                        Jest to moment podczas, którego kości rosną szybciej niż mięśnie, w wyniku czego stają
+                        się one napięte, wręcz jak sztywna lina, a tym samy mniej elastyczne. W następstwie
+                        napięte mięśnie powodują ograniczenie zakresu ruchu w danym stawie, a to doprowadza do
+                        pojawienia się kompensacji, co może być przyczyną wystąpienia przeciążeń i kontuzji.
+                     </p>
+                  </li>
+                  <li class="aktualnosci__box--list-item">
+                     <h3 class="heading-3__aktualnosci">Kiedy zaobserwujesz wadę postawy</h3>
+                     <p class="aktualnosci__box--list--item__text aktualnosci__box--list--item__text-list">
+                        Defekt estetyczny, który zauważasz samoczynnie nie minie, a będzie się pogłębiać
+                     </p>
+                     <p class="aktualnosci__box--list--item__text aktualnosci__box--list--item__text-list">
+                        Wada postawy stwarza inne warunki pracy dla narządu ruchu Twojego dziecka, które
+                        sprzyjają powstawaniu kontuzji.
+                     </p>
+                     <p class="aktualnosci__box--list--item__text aktualnosci__box--list--item__text-list">
+                        Wady postawy ograniczają rozwój motoryczny
+                     </p>
+                  </li>
+                  <li class="aktualnosci__box--list-item">
+                     <h3 class="heading-3__aktualnosci">Wiotkość wielostawowa</h3>
+                     <p class="aktualnosci__box--list--item__text">
+                        Powinna zostać określona przez fizjoterapeutę, bądź lekarza. Dotyczy dzieci, które są
+                        bardzo elastyczne. Z perspektywy niektórych dyscyplin sportowych jest to bardzo duży
+                        walor. Ale należy pamiętać, że u takiego dziecko więzadła, czyli linki łączące ze sobą
+                        dwie kości są zbyt elastyczne. W takiej sytuacji ważne jest, żeby to mięśnie
+                        utrzymywały stabilnie dwie kości względem siebie, bo w przeciwnym razie tworzą się
+                        idealne warunki do powstania kontuzji/wady postawy
+                     </p>
+                  </li>
+                  <li class="aktualnosci__box--list-item">
+                     <h3 class="heading-3__aktualnosci">
+                        Kiedy zauważysz, że Twoje dziecko ustawia którąś część ciała nietypowy/nieprawidłowy
+                        sposób podczas aktywności sportowych.
+                     </h3>
+                     <p class="aktualnosci__box--list--item__text">
+                        Zdarza się, że Ty jako rodzic zauważysz, że Twoje dziecko ustawia którąś część ciała w
+                        nietypowy sposób (np. stopy do wewnątrz, ma odmienny styl biegania). Często też trener
+                        zwraca uwagę na nieprawidłowy sposób wykonywania danej czynności np. ustawianie kolan
+                        do środka podczas podskoku i lądowania.
+                     </p>
+                  </li>
+                  <li class="aktualnosci__box--list-item">
+                     <h3 class="heading-3__aktualnosci">Brak rozciągania po treningach</h3>
+                  </li>
+                  <li class="aktualnosci__box--list-item">
+                     <h3 class="heading-3__aktualnosci">Regularne i bardzo intensywne treningi</h3>
+                     <p class="aktualnosci__box--list--item__text">
+                        Stanowią one obciążenie dla narządu ruchu, czyli poszczególne mięśnie, ścięgna
+                        wykonują ciężką pracę, która w pewnym momencie może przekroczyć ich wytrzymałość i
+                        doprowadzić do powstawania mikrourazów w ich obrębie. Może mieć również miejsce
+                        oddziaływanie bardzo dużych sił w miejscu przyczepu ścięgna do kości, co również
+                        doprowadza do dysfunkcji tej okolicy. Zarówno jedne, jak i drugie, w początkowym
+                        stadium nie dają o sobie znać.
+                     </p>
+                  </li>
+                  <li class="aktualnosci__box--list-item">
+                     <h3 class="heading-3__aktualnosci">Pojawienie się dolegliwości bólowych</h3>
+                     <p class="aktualnosci__box--list--item__text">
+                        Bardzo ważne jest udanie się do fizjoterapeuty na początku pojawienia się dolegliwości
+                        bólowych. Niestety nie jest rzadkością, że w wywiadzie słyszymy, że ból występuje u
+                        Młodego Sportowca od jakiś kilku miesięcy, a rodzice dopiero teraz podjęli kroki w
+                        kierunku diagnostyki i leczenia zaistniałego problemu. A czym dłużej on trwa problem,
+                        tym bardziej się utrwala, a także związane z nim procesy patofizjologiczne np. stan
+                        zapalny, czy tworzenie się kolejnych kompensacji.
+                     </p>
+                  </li>
+                  <li class="aktualnosci__box--list-item">
+                     <h3 class="heading-3__aktualnosci">Po unieruchomieniu gipsem lub ortezą</h3>
+                     <p class="aktualnosci__box--list--item__text">
+                        Jeżeli Twoje dziecko miało unieruchomioną jakąś okolicę, czy to za sprawą gipsu, czy
+                        ortezy, nie zawierzaj stwierdzeniom: ,,rozchodzi się, fizjoterapia nie jest
+                        potrzebna”. Takiego Młodego Sportowca koniecznie należy ocenić pod kątem ruchomości
+                        stawów, siły mięśniowej, stabilności stawów.
+                     </p>
+                  </li>
+                  <li class="aktualnosci__box--list-item">
+                     <h3 class="heading-3__aktualnosci">Uprawianie asymetrycznej dyscypliny sportowej</h3>
+                     <p class="aktualnosci__box--list--item__text">
+                        Kiedy Twoje dziecko uprawia asymetryczną dyscyplinę sportową, to może występować taka
+                        sytuacja, że tylko jedna strona ciała wykonuje intensywną pracę, albo praca lewej i
+                        prawej strony znacząco się różni. To predysponuje do powstania wad postawy i stanowi
+                        dobre podłoże do pojawienia się kontuzji. U takiego Młodego Sportowca należy
+                        regularnie monitorować postawę ciała.
+                     </p>
+                  </li>
+                  <button class="button-small button-small-down aktualnosci__box--list--btn">
+                     Czytaj więcej
+                  </button>
+               </ul>
+               <p class="aktualnosci__box--kadra">Konsultacje dzieci 3-10 lat – Gosia, Ania, Paweł</p>
+               <p class="aktualnosci__box--kadra">Konsultacje dzieci 10-18 lat – Ania i ...</p>
+               <button class="button aktualnosci__box--btn">Umów się na wizytę</button>
+            </div>
+         </div>
+         <div id="aktualnosc-2" class="aktualnosci__box sekcjeGlowne">
+            <div class="aktualnosci__box--left">
+               <img src="img/aktualności/aktualnosc-1.jpg" alt="" class="aktualnosci__box--left-img" />
+            </div>
+            <div class="aktualnosci__box--right">
+               <p class="aktualnosci__box--data">13 luty 2021</p>
+               <h3 class="heading-3__aktualnosci">Godziny otwarcia Poradni w dniach 14.02-18.02.2022r.</h3>
+               <ul class="aktualnosci__box--list">
+                  <li class="aktualnosci__box--list-item">
+                     <h3 class="heading-3__aktualnosci">poniedziałek 14.02</h3>
+                     <p class="aktualnosci__box--list--item__text">12:00 – 20:00</p>
+                  </li>
+                  <li class="aktualnosci__box--list-item">
+                     <h3 class="heading-3__aktualnosci">Wtorek 15.02</h3>
+                     <p class="aktualnosci__box--list--item__text">8:00 – 16:00</p>
+                  </li>
+                  <li class="aktualnosci__box--list-item">
+                     <h3 class="heading-3__aktualnosci">Środa 16.02</h3>
+                     <p class="aktualnosci__box--list--item__text">12:00 – 20:00</p>
+                  </li>
+                  <li class="aktualnosci__box--list-item">
+                     <h3 class="heading-3__aktualnosci">Czwartek 17.02</h3>
+                     <p class="aktualnosci__box--list--item__text">8:00 – 16:00</p>
+                  </li>
+                  <li class="aktualnosci__box--list-item">
+                     <h3 class="heading-3__aktualnosci">Piątek 18.02</h3>
+                     <p class="aktualnosci__box--list--item__text">12:00 – 20:00</p>
+                  </li>
+               </ul>
+            </div>
+         </div>
+         <div id="aktualnosc-3" class="aktualnosci__box sekcjeGlowne">
+            <div class="aktualnosci__box--left">
+               <img src="img/aktualności/aktualnosc-2.jpg" alt="" class="aktualnosci__box--left-img" />
+            </div>
+            <div class="aktualnosci__box--right">
+               <p class="aktualnosci__box--data">9 październik 2021</p>
+               <h3 class="heading-3__aktualnosci">
+                  Nowość! Poszerzamy ofertę o diagnozę i terapię Integracji Sensorycznej.
+               </h3>
+               <h3 class="heading-3__aktualnosci">Terapia metodą Integracji Sensorycznej</h3>
+               <ul class="aktualnosci__box--list">
+                  <li class="aktualnosci__box--list-item">
+                     <h3 class="heading-3__aktualnosci">Czym jest zaburzenie przetwarzania sensorycznego?</h3>
+                     <p class="aktualnosci__box--list--item__text">
+                        SPD (zaburzenie przetwarzania sensorycznego) to trudność w odbieraniu, organizowaniu i
+                        wykorzystywaniu przez mózg informacji sensorycznej, w wyniku czego codzienne
+                        interakcje z otoczeniem danej osoby jest nieefektywne.
+                     </p>
+                  </li>
+                  <li class="aktualnosci__box--list-item">
+                     <h3 class="heading-3__aktualnosci">
+                        Jakie zaburzenia przetwarzania sensorycznego rozróżniamy?
+                     </h3>
+                     <p class="aktualnosci__box--list--item__text aktualnosci__box--list--item__text-list">
+                        Problemy z modulacją sensoryczną – jak dziecko reguluje swoje reakcje na wrażenia
+                        (nadreaktywnością, podreaktywnością, poszukiwaniem sensorycznym),
+                     </p>
+                     <p class="aktualnosci__box--list--item__text aktualnosci__box--list--item__text-list">
+                        Dyskryminacja sensoryczna (różnicowanie sensoryczne) – dziecko napotyka trudności w
+                        rozróżnianiu docierających do niego wrażeń,
+                     </p>
+                     <p class="aktualnosci__box--list--item__text aktualnosci__box--list--item__text-list">
+                        Problemy motoryczne o podłożu sensorycznym – trudności z opracowaniem działania,
+                        zaplanowaniem tego, jak zorganizować i poruszać swoim ciałem i z przeprowadzeniem tego
+                        planu.
+                     </p>
+                  </li>
+                  <li class="aktualnosci__box--list-item">
+                     <h3 class="heading-3__aktualnosci">
+                        Jakie mogą być objawy zaburzeń przetwarzania sensorycznego?
+                     </h3>
+                     <p class="aktualnosci__box--list--item__text aktualnosci__box--list--item__text-list">
+                        Unika dotykania i bycia dotykanym, nie lubi się brudzić, nie lubi dotykać przedmiotów
+                        o wyrazistej fakturze.
+                     </p>
+                     <p class="aktualnosci__box--list--item__text aktualnosci__box--list--item__text-list">
+                        Wpada na inne osoby, przedmioty, jest nieświadome, że ma brudną buzię, nie potrafi
+                        stwierdzić, w którą część ciała zostało dotknięte, ubiera się niezdarnie, nie potrafi
+                        zapinać guzików, ma problem z oceną czy ból jest słaby czy silny.
+                     </p>
+                     <p class="aktualnosci__box--list--item__text aktualnosci__box--list--item__text-list">
+                        Nie lubi ruchu, w wielu sytuacjach czuje się mało bezpiecznie, boi się stracić
+                        równowagę, cierpi na chorobę lokomocyjną.
+                     </p>
+                     <p class="aktualnosci__box--list--item__text aktualnosci__box--list--item__text-list">
+                        Często upada, trudno mu rozpocząć działanie, ale jak rozpocznie to ciężko mu skończyć,
+                     </p>
+                     <p class="aktualnosci__box--list--item__text aktualnosci__box--list--item__text-list">
+                        Nadmiernie lubi szybki obrotowy ruch i nie jest mu przy tym niedobrze, uwielbia
+                        przyjmować pozycje do góry nogami, ciągle się wierci.
+                     </p>
+                     <p class="aktualnosci__box--list--item__text aktualnosci__box--list--item__text-list">
+                        Wydaje się być sztywne i nieskoordynowane, ma problem z ustawieniem swoich kończyn
+                        podczas ubierania, ma trudności z jazdą na rowerze, używa zbyt mało lub zbyt dużo
+                        siły, gdy np. koloruje, bawi się zabawkami, rzuca/kopie piłkę.
+                     </p>
+                     <p class="aktualnosci__box--list--item__text aktualnosci__box--list--item__text-list">
+                        Jest niechętny do ruchu i zabawy, ożywia je dopiero pchanie, podnoszenie i noszenie
+                        ciężkich przedmiotów.
+                     </p>
+                     <p class="aktualnosci__box--list--item__text aktualnosci__box--list--item__text-list">
+                        Uwielbia być przytulanie i ściskane z dużą siłą.
+                     </p>
+                     <p class="aktualnosci__box--list--item__text aktualnosci__box--list--item__text-list">
+                        Nie dostrzega podobieństw lub różnic między obrazkami, napisanymi słowami,
+                        przedmiotami lub twarzami. Ma trudności z zadaniami o charakterze wzrokowym – oceną
+                        położenia obiektów (daleko czy blisko?), jest mocno podekscytowane, gdy widzi zbyt
+                        dużo elementów – zabawek, ludzi, nadmiernie reaguje na mocne światło.
+                     </p>
+                     <p class="aktualnosci__box--list--item__text aktualnosci__box--list--item__text-list">
+                        Ma trudności z zauważaniem różnic między dźwiękami, zwłaszcza spółgłoskami kończącymi
+                        wyrazy, nie potrafi stworzyć, powtórzyć rymów, w hałasie nie potrafi wyłowić głosu
+                        nauczyciela lub zasłania uszy, narzeka na hałasy, które nie przeszkadzają innym lub
+                        lubi głośne dźwięki telewizora, radia, uwielbia hałaśliwe miejsca.
+                     </p>
+                     <p class="aktualnosci__box--list--item__text aktualnosci__box--list--item__text-list">
+                        Nie potrafi rozróżnić konkretnych zapachów, smaków. Nie toleruje niektórych
+                        konsystencji i temperatur pokarmów, może jest mocno przyprawione pokarmy bez żadnej
+                        reakcji, lubi lizać i smakować niejadalne przedmioty.
+                     </p>
+                  </li>
+                  <li class="aktualnosci__box--list-item">
+                     <h3 class="heading-3__aktualnosci">Jak wygląda diagnoza?</h3>
+                     <p class="aktualnosci__box--list--item__text">
+                        Diagnoza podzielona jest na trzy wizyty:
+                     </p>
+                     <p class="aktualnosci__box--list--item__text">
+                        1. Wywiad z rodzicem/opiekunem i obserwacja spontanicznej aktywności dziecka
+                     </p>
+                     <p class="aktualnosci__box--list--item__text">
+                        2. Próby obserwacji klinicznej i testy Południowo-Kalifornijskie,
+                     </p>
+                     <p class="aktualnosci__box--list--item__text">
+                        3. Omówienie wyników testów z rodzicem/opiekunem.
+                     </p>
+                  </li>
+                  <li class="aktualnosci__box--list-item">
+                     <h3 class="heading-3__aktualnosci">Jak wygląda terapia?</h3>
+                     <p class="aktualnosci__box--list--item__text">
+                        Podczas terapii dostarczamy dziecku odpowiednią ilość i jakość bodźców, aby mózg
+                        nauczył się prawidłowego reagowania i wykształcił właściwe reakcje adaptacyjne. Do
+                        terapii metodą integracji sensorycznej wykorzystujemy specjalnie przystosowany sprzęt
+                        np. huśtawki, hamak, trampolinę, piłki sensoryczne czy kamizelki obciążeniowe.
+                     </p>
+                  </li>
+                  <button class="button-small button-small-down aktualnosci__box--list--btn">
+                     Czytaj więcej
+                  </button>
+               </ul>
+               <p class="aktualnosci__box--kadra">Konsultacje: Gosia</p>
+               <button class="button aktualnosci__box--btn">Umów się na wizytę</button>
+            </div>
+         </div>
+      </section>
+      <section id="aktualnosc-4" class="aktualnosci-list">
+         <img
+            src="./img/fale/fala-pomarancz-top.png"
+            alt=""
+            class="aktualnosci-index__fala aktualnosci-index__fala--up" />
+         <h2 class="heading-2__aktualnosci heading-2__aktualnosci--aktualnosci">Pozostałe wpisy</h2>
+         <img src="./img/fale/fala-pomarancz-botton.png" alt="" class="aktualnosci-index__fala" />
+         <div class="aktualnosci-list__grid">
+            <div class="aktualnosci-list__box" data-position="0">
+               <p class="aktualnosci__box--data">01.10.2021</p>
+               <p class="aktualnosci-list__box--text">
+                  <span>Uwaga!</span> Zmiana godzin pracy poradni w miesiącu luty 2021
+               </p>
+               <button class="button">Czytaj więcej</button>
+            </div>
+            <div class="aktualnosci-list__box" data-position="1">
+               <p class="aktualnosci__box--data">01.10.2021</p>
+               <p class="aktualnosci-list__box--text">
+                  <span>Uwaga!</span> Zmiana godzin pracy poradni w miesiącu luty 2021
+               </p>
+               <button class="button">Czytaj więcej</button>
+            </div>
+            <div class="aktualnosci-list__box" data-position="2">
+               <p class="aktualnosci__box--data">01.10.2021</p>
+               <p class="aktualnosci-list__box--text">
+                  <span>Uwaga!</span> Zmiana godzin pracy poradni w miesiącu luty 2021
+               </p>
+               <button class="button">Czytaj więcej</button>
+            </div>
+         </div>
+      </section>
+      <section class="kontakt">
+         <div class="kontakt__wrapper">
+            <h2 class="heading-2__kontakt"><span>Umów się</span> na wizytę</h2>
+            <div class="kontakt__box">
+               <div class="kontakt__box--left">
+                  <p class="kontakt__box--left-opis">
+                     Poradnia czynna jest od poniedziałku do piątku od 8.00 - 20.00
+                  </p>
+                  <p class="kontakt__box--left-opis">
+                     Bezpłatny parking dostępny jest na terenie przynależnyn do budynku w którym mieści się
+                     Poradnia. Parking nie jest strzeżony
+                  </p>
+                  <div class="kontakt__box--left-link">
+                     <a
+                        target="_blank"
+                        class="header__wrapper--kontakt--box"
+                        href="https://goo.gl/maps/QaXbHsUTzvYzDrRW9">
+                        <div class="header__wrapper--kontakt--box__img">
+                           <svg>
+                              <use
+                                 xlink:href="img/ikony-basic-wersja-4/icons_sample-004.svg#icon-sample-004-adres"></use>
+                           </svg>
+                        </div>
+                        <div class="header__wrapper--kontakt--box__text">
+                           <p class="header__wrapper--kontakt--box__link-text">Ul. Przemysłowa 55</p>
+                           <p class="header__wrapper--kontakt--box__link-text">43-100 Tychy</p>
+                        </div>
+                     </a>
+                     <a class="header__wrapper--kontakt--box" href="tel:+48-513-659-578">
+                        <div class="header__wrapper--kontakt--box__img">
+                           <svg>
+                              <use
+                                 xlink:href="img/ikony-basic-wersja-4/icons_sample-004.svg#icon-sample-004-telefon"></use>
+                           </svg>
+                        </div>
+                        <div class="header__wrapper--kontakt--box__text">
+                           <p class="header__wrapper--kontakt--box__link-text">513-659-578</p>
+                           <p class="header__wrapper--kontakt--box__link-text">8:00 - 19:00</p>
+                        </div>
+                     </a>
+                     <div class="header__wrapper--kontakt--box" href="">
+                        <div class="header__wrapper--kontakt--box__img">
+                           <svg>
+                              <use
+                                 xlink:href="img/ikony-basic-wersja-4/icons_sample-004.svg#icon-sample-004-clock"></use>
+                           </svg>
+                        </div>
+                        <div class="header__wrapper--kontakt--box__text">
+                           <p class="header__wrapper--kontakt--box__link-text">Pn-Pt 8:00 - 20:00</p>
+                        </div>
+                     </div>
+                     <a class="header__wrapper--kontakt--box" href="">
+                        <div class="header__wrapper--kontakt--box__img">
+                           <svg>
+                              <use
+                                 xlink:href="img/ikony-basic-wersja-4/icons_sample-004.svg#icon-sample-004-mail"></use>
+                           </svg>
+                        </div>
+                        <div class="header__wrapper--kontakt--box__text">
+                           <p class="header__wrapper--kontakt--box__link-text">tychy@fizjo-family.pl</p>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+               <div class="kontakt__box--right">
+                  <form class="kontakt__form">
+                     <!-- imie i nazwisko -->
+                     <label for="imie" class="kontakt__form--label kontakt__form--label-1z2">
+                        <input
+                           type="text"
+                           class="kontakt__form--label-input"
+                           id="imie"
+                           name="imie"
+                           pattern="[a-zA-ZąćęłńóśźżĄĘŁŃÓŚŹŻ]{3,}"
+                           placeholder="Imie"
+                           required
+                           title="min. długość 3 litery" />
+                        <span
+                           class="kontakt__form--label-img"
+                           src="./img/ikony-basic-wersja-4/icon-sample-004-checked.svg"></span>
+                     </label>
+                     <!-- telefon -->
+                     <label for="telefon" class="kontakt__form--label kontakt__form--label-1z2">
+                        <input
+                           class="kontakt__form--label-input"
+                           id="telefon"
+                           name="telefon"
+                           pattern="[0-9]{3}([., -]?)[0-9]{3}\1[0-9]{3}$"
+                           placeholder="Numer kontaktowy"
+                           required
+                           title="Proszę podaj numer kontaktowy w formacie 552-335-222 lub 552335222"
+                           type="tel" />
+                        <span
+                           class="kontakt__form--label-img"
+                           src="./img/ikony-basic-wersja-4/icon-sample-004-checked.svg"></span>
+                     </label>
+                     <!-- e-mail -->
+                     <label for="email" class="kontakt__form--label">
+                        <input
+                           class="kontakt__form--label-input"
+                           id="email"
+                           name="email"
+                           pattern="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$"
+                           placeholder="Twój adres e-mail"
+                           required
+                           type="email" />
+                        <span
+                           class="kontakt__form--label-img"
+                           src="./img/ikony-basic-wersja-4/icon-sample-004-checked.svg"></span>
+                     </label>
+                     <!-- treść wiadomości -->
+                     <label for="wiadomosc" class="kontakt__form--label">
+                        <textarea
+                           class="kontakt__form--input kontakt__form--textarea"
+                           id="wiadomosc"
+                           minlength="5"
+                           name="wiadomosc"
+                           placeholder="Twoja wiadomość"
+                           required
+                           rows="5"
+                           title="wiadomość nie może być krótsza niż 5 znaków"></textarea>
+                        <span
+                           class="kontakt__form--label-img"
+                           src="./img/ikony-basic-wersja-4/icon-sample-004-checked.svg"></span>
+                     </label>
+                     <!-- RODO -->
+                     <label class="kontakt__form--label-rodo" for="rodo">
+                        <input type="checkbox" name="rodo" id="rodo" required />
+                        <p class="kontakt__form--label-rodo--text">
+                           Wyrażam zgodę na przetwarzanie moich danych osobowych podanych w formularzu
+                           kontaktowym przez Fizjo-Family Rafał Andrzejczak z siedzibą przy ul. Przemysłowej
+                           55, 43-100 Tychy, <span>NIP: 929-172-</span>87-67 w celu kontaktu w związku z
+                           przesłanym za pośrednictwem formularza kontaktowego zgłoszeniem. Zgodę można
+                           wycofać w dowolnym momencie bez wpływu na zgodność z prawem przetwarzania danych
+                           osobowych, którego dokonano na podstawie zgody przed jej wycofaniem.
+                           Administratorem danych osobowych podanych w formularzu jest Fizjo-Family ul.
+                           Przemysłowa 55, 43-100 Tychy.
+                        </p>
+                     </label>
+                     <button class="button" type="submit" value="Wyślij">Wyślij wiadomość</button>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </section>
+      <footer class="footer">
+         <img src="./img/fale/fala-szara-top.png" alt="" class="oferta-index__fala-up" />
+         <div class="footer__wrapper">
+            <h5 class="footer__wrapper--h5">Fizjo-Family</h5>
+            <p class="footer__wrapper--text">
+               <span>Płatność za zabiegi przyjmujemy zarówno gotówką jak i kartą.</span>
+               <span>Istnieje możliwość wykupienia pakietu wizyt.</span>
+               <span>Świadczymy usługi w ramach wcześnego wspomagania rozwoju (WWR).</span>
+            </p>
+            <!-- Social media -->
+            <div class="footer__wrapper--box">
+               <a href="#" class="footer__wrapper--box-link">
+                  <svg class="footer__wrapper--box-link__icon">
+                     <use
+                        xlink:href="img/socialMedia/icons_social_media_sample-002.svg#icon-social-media-sample-002-facebook"></use>
+                  </svg>
+               </a>
+               <a href="" class="footer__wrapper--box-link">
+                  <svg class="footer__wrapper--box-link__icon">
+                     <use
+                        xlink:href="img/socialMedia/icons_social_media_sample-002.svg#icon-social-media-sample-002-instagram"></use>
+                  </svg>
+               </a>
+            </div>
+            <!-- Koniec social media -->
+            <img src="./img/index/fizjofamily-logo-footer.svg" alt="" class="footer__wrapper--logo" />
+            <h6 class="footer__wrapper--h6">Mapa strony</h6>
+            <!-- Start Anchor -->
+            <div class="footer__wrapper--anchor">
+               <ul class="footer__wrapper--anchor-list">
+                  <li class="footer__wrapper--anchor-item">
+                     <a
+                        href=""
+                        class="footer__wrapper--anchor-item--link footer__wrapper--anchor-item--link-home"
+                        ><span>Strona główna</span></a
+                     >
+                  </li>
+                  <li class="footer__wrapper--anchor-item">
+                     <a
+                        href=""
+                        class="footer__wrapper--anchor-item--link footer__wrapper--anchor-item--link-oFirmie"
+                        ><span>O firmie</span></a
+                     >
+                  </li>
+                  <li class="footer__wrapper--anchor-item">
+                     <a
+                        href=""
+                        class="footer__wrapper--anchor-item--link footer__wrapper--anchor-item--link-oferta"
+                        ><span>Oferta</span></a
+                     >
+                  </li>
+                  <li class="footer__wrapper--anchor-item">
+                     <a
+                        href=""
+                        class="footer__wrapper--anchor-item--link footer__wrapper--anchor-item--link-galeria"
+                        ><span>Galeria</span></a
+                     >
+                  </li>
+                  <li class="footer__wrapper--anchor-item">
+                     <a
+                        href=""
+                        class="footer__wrapper--anchor-item--link footer__wrapper--anchor-item--link-współpraca"
+                        ><span>Współpraca</span></a
+                     >
+                  </li>
+                  <li class="footer__wrapper--anchor-item">
+                     <a
+                        href=""
+                        class="footer__wrapper--anchor-item--link footer__wrapper--anchor-item--link-kontakt"
+                        ><span>Kontakt</span></a
+                     >
+                  </li>
+               </ul>
+               <!-- End Anchor -->
+            </div>
+         </div>
+      </footer>
+      <div class="nav__overlay nav__display"></div>
+   </body>
+</html>

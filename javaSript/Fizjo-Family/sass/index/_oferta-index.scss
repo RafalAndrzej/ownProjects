@@ -1,0 +1,54 @@
+.oferta-index {
+   background-color: var(--color-darkWhite);
+   position: relative;
+   &__fala-up {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translateY(-95%);
+      width: 100vw;
+   }
+   &__fala-down {
+      display: block;
+      background-color: var(--color-white);
+      width: 100%;
+   }
+   &-container {
+      grid-column: main-start / main-end;
+      display: grid;
+      @media screen and (min-width: 1000px) {
+         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      }
+      grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+      justify-content: center;
+      max-width: 1600px;
+      margin: 0 auto;
+      padding: 0 2rem;
+
+      &__box {
+         @include hrefLink;
+         padding: 2rem;
+         border: 2px solid var(--color-darkWhite);
+         transition: border 0.3s;
+         &--img {
+            display: block;
+            width: 12rem;
+            height: 12rem;
+            @media screen and (max-width: 500px) {
+               width: 8rem;
+               height: 8rem;
+            }
+            margin: 0 auto;
+            margin-bottom: 2rem;
+         }
+         &--text {
+            text-align: center;
+         }
+         @media screen and (hover: hover) {
+            &:hover {
+               border: 2px solid var(--color-orange);
+            }
+         }
+      }
+   }
+}

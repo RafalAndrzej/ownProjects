@@ -1,0 +1,169 @@
+.aktualnosci {
+   margin-top: calc((100vw * 0.4) * 0.25);
+   margin-bottom: 2rem;
+   &__box {
+      display: flex;
+      flex-wrap: nowrap;
+      column-gap: 5rem;
+      padding: 2rem 3rem;
+      background-color: var(--color-darkWhite);
+      &:nth-of-type(2n) {
+         background-color: var(--color-white);
+      }
+      @media screen and (max-width: 600px) {
+         &--left {
+            display: none;
+         }
+         &--right {
+            flex-basis: 100%;
+         }
+      }
+      @media screen and (min-width: 600px) {
+         &--left {
+            flex-basis: 30%;
+            max-height: 350px;
+            max-width: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            row-gap: 2rem;
+            position: sticky;
+            top: 5%;
+            overflow: hidden;
+            margin-left: auto;
+            padding-bottom: 1rem;
+            &-img {
+               width: 100%;
+               height: 100%;
+               border-radius: 3rem;
+               transition: transform 0.5s;
+               object-fit: cover;
+               object-position: top;
+               @media screen and (hover: hover) {
+                  cursor: zoom-in;
+               }
+            }
+         }
+         &--right {
+            flex-basis: 70%;
+            display: flex;
+            flex-direction: column;
+            max-width: 980px;
+            margin-right: auto;
+         }
+      }
+      &--right {
+         margin-bottom: 1rem;
+
+         & > ul {
+            list-style: none;
+            margin-left: 1.5rem;
+         }
+      }
+      &--data {
+         font-size: 1.5rem;
+      }
+      &--list {
+         font-size: 1.7rem;
+         padding-bottom: 0.5rem;
+         position: relative;
+
+         margin-bottom: 1rem;
+         margin-left: 3rem;
+
+         &--btn {
+            margin: 3rem 0;
+            margin-top: 0;
+         }
+         &--item {
+            &__text {
+               margin-left: 1.7rem;
+               span {
+                  color: var(--color-orange);
+                  font-size: 1.7rem;
+               }
+            }
+         }
+         &-item {
+            margin-bottom: 1rem;
+            &__text {
+               overflow: hidden;
+               &:not(:last-of-type) {
+                  margin-bottom: 0.5rem;
+               }
+               &-list {
+                  &::before {
+                     content: '\261E';
+                     color: var(--color-orange);
+                     font-size: 2rem;
+                  }
+               }
+            }
+         }
+      }
+      &-big {
+         transition: all 0.5s;
+         & .aktualnosci__box--list {
+            & > :not(:first-of-type) {
+               margin-bottom: 0;
+               visibility: hidden;
+               height: 0px;
+            }
+         }
+      }
+      &--kadra {
+         font-size: 1.7rem;
+         position: relative;
+         &:not(:last-of-type) {
+            margin-bottom: 0.5rem;
+         }
+         &:nth-of-type(2) {
+            &::before {
+               content: '';
+               display: block;
+               position: absolute;
+               top: -0.5rem;
+               width: 70%;
+               border-bottom: 2px solid var(--color-orange);
+            }
+            &::after {
+               content: '';
+               display: block;
+               position: absolute;
+               top: 1rem;
+               width: 70%;
+               border-bottom: 2px solid var(--color-orange);
+               transform: translateY(-2rem);
+            }
+         }
+      }
+      &--btn {
+         margin: 2rem 0;
+      }
+   }
+}
+.aktualnosci-list {
+   &__grid {
+      display: grid;
+      @media screen and (max-width: 500px) {
+         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      }
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-gap: 2rem;
+
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 3rem;
+      text-align: center;
+      align-items: center;
+   }
+   &__box {
+      &--text {
+         font-size: 1.8rem;
+         margin: 1rem 0;
+         span {
+            font-weight: bold;
+         }
+      }
+   }
+}

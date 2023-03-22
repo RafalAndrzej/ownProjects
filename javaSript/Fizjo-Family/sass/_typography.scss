@@ -1,0 +1,167 @@
+.heading-1 {
+   &__header {
+      font-size: 3.4rem;
+      @media screen and (max-width: 500px) {
+         font-size: 2.8rem;
+      }
+      font-family: 'Roboto Condensed', sans-serif;
+      span {
+         font-weight: lighter;
+      }
+   }
+   &__headerKadra {
+      font-size: 3.4rem;
+      @media screen and (min-width: 500px) {
+         font-size: 7rem;
+      }
+   }
+}
+.heading-2 {
+   &__o-nas {
+      font-size: 3.4rem;
+      @media screen and (max-width: 400px) {
+         font-size: 3rem;
+      }
+      font-weight: bold;
+      color: var(--color-orange);
+      margin-bottom: 2rem;
+   }
+   &__aktualnosci {
+      font-size: 3.4rem;
+      text-align: center;
+      &--index {
+         margin-top: 1rem;
+         margin-bottom: 2rem;
+         color: var(--color-orange);
+      }
+      &--aktualnosci {
+         background-color: var(--color-orange);
+         color: var(--color-white);
+      }
+   }
+   &__galeria {
+      font-size: 3.4rem;
+      color: var(--color-white);
+      text-align: center;
+      padding-top: 1rem;
+      padding-bottom: 2rem;
+      background-color: var(--color-orange);
+   }
+   &__kontakt {
+      font-size: 3.4rem;
+      text-align: center;
+      margin-top: 1rem;
+      margin-bottom: 2rem;
+      span {
+         color: var(--color-orange);
+      }
+   }
+   &__kadra {
+      font-size: 3.5rem;
+      font-weight: bold;
+      color: var(--color-orange);
+      &--orange {
+         text-align: center;
+         background-color: var(--color-orange);
+         color: var(--color-darkWhite) !important;
+      }
+   }
+   &__oferta {
+      font-size: 2.8rem;
+      font-weight: bold;
+      color: var(--color-orange);
+      padding: 1rem 0;
+      &--orange {
+         text-align: center;
+         background-color: var(--color-orange);
+         color: var(--color-darkWhite) !important;
+      }
+      &--white {
+         text-align: center;
+         background-color: var(--color-darkWhite);
+         color: var(--color-orange) !important;
+      }
+   }
+   &__cennik {
+      font-size: 3rem;
+      font-weight: bold;
+      color: var(--color-orange);
+      padding: 1rem 0;
+      text-align: center;
+   }
+}
+.heading-3 {
+   &__o-nas {
+      font-size: 2.5rem;
+      font-weight: bold;
+      &:last-of-type {
+         margin-bottom: 2rem;
+      }
+   }
+   &__oferta {
+      &-index {
+         font-size: 3rem;
+         text-transform: uppercase;
+         color: var(--color-orange);
+         text-align: center;
+         padding: 2rem 0;
+      }
+   }
+   &__kadra {
+      font-size: 2.2rem;
+      font-weight: bold;
+   }
+   &__oferta {
+      font-size: 2.8rem;
+      color: var(--color-orange);
+      width: 100%;
+   }
+   &__cennik {
+      font-size: 2.5rem;
+      margin: 0 auto;
+      margin-bottom: 1rem;
+      width: max-content;
+      color: var(--color-white);
+      background-color: var(--color-orange);
+      padding: 0.5rem 1.5rem;
+      border-radius: 3rem;
+   }
+   &__aktualnosci {
+      font-size: 1.8rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+   }
+}
+.heading-4 {
+   &__oferta {
+      &-index {
+         font-size: 2rem;
+      }
+   }
+   &__kadra {
+      font-size: 1.6rem;
+      color: var(--color-orange);
+      font-weight: normal;
+   }
+   &__cennik {
+      font-size: 2rem;
+      font-weight: bold;
+      text-align: center;
+   }
+}
+.heading-5 {
+   &__header {
+      @include hrefLink;
+      font-size: 1.7rem;
+   }
+}
+.heading-6 {
+   &__aside {
+      font-size: 2rem;
+      text-transform: uppercase;
+      font-weight: 300;
+      & > span {
+         font-weight: bold;
+      }
+   }
+}

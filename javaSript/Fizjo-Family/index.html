@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>
+         Fizjo-Family Specjalistyczna Poradnia Rehabilitacji Dziecięcej Niepubliczna Poradnia
+         Psychologiczno-Pedagogiczna
+      </title>
+      <meta name="description" content="" />
+      <meta name="keywords" content="" />
+      <link rel="stylesheet" href="sass/main.scss" />
+
+      <link rel="shortcut icon" href="img/favicon/favicon-fizjo-family.png" />
+      <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/favicon-fizjo-family-apple-57x57.png" />
+      <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/favicon-fizjo-family-apple-57x57.png" />
+      <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/favicon-fizjo-family-apple-72x72.png" />
+      <link
+         rel="apple-touch-icon"
+         sizes="114x114"
+         href="img/favicon/favicon-fizjo-family-apple-114x114.png" />
+
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap"
+         rel="stylesheet" />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap"
+         rel="stylesheet" />
+      <script type="module" defer src="js/controler.js"></script>
+   </head>
+   <body>
+      <header class="header">
+         <nav>
+            <ul class="nav nav__hidden">
+               <li class="nav__list">
+                  <a class="nav__link" data-page="index" href="http://127.0.0.1:1400">Strona główna</a>
+               </li>
+               <li class="nav__list">
+                  <a class="nav__link" href="http://127.0.0.1:1400/kadra.html" data-page="kadra">Kadra</a>
+               </li>
+               <li class="nav__list">
+                  <a class="nav__link" href="http://127.0.0.1:1400/oferta.html" data-page="oferta">Oferta</a>
+               </li>
+               <li class="nav__list">
+                  <a class="nav__link" href="http://127.0.0.1:1400/cennik.html" data-page="cennik">Cennik</a>
+               </li>
+               <li class="nav__list">
+                  <a class="nav__link" href="http://127.0.0.1:1400/aktualnosci.html" data-page="aktualnosci"
+                     >Aktualności</a
+                  >
+               </li>
+               <li class="nav__list">
+                  <a class="nav__link" data-page="kontakt" href="">Kontakt</a>
+               </li>
+            </ul>
+            <button class="button button-mobil button-mobil__in">Menu</button>
+            <button class="button button-mobil button-mobil__out nav__display">X</button>
+         </nav>
+         <div class="header headerIndex">
+            <div class="header__wrapper">
+               <div class="header__wrapper--kontakt">
+                  <a
+                     target="_blank"
+                     class="header__wrapper--kontakt--box"
+                     href="https://goo.gl/maps/QaXbHsUTzvYzDrRW9">
+                     <div class="header__wrapper--kontakt--box__img">
+                        <svg>
+                           <use
+                              xlink:href="img/ikony-basic-wersja-4/icons_sample-004.svg#icon-sample-004-adres"></use>
+                        </svg>
+                     </div>
+                     <div class="header__wrapper--kontakt--box__text">
+                        <h5 class="heading-5__header">Jak do nas dojechać:</h5>
+                        <p class="header__wrapper--kontakt--box__link-text">Ul. Przemysłowa 55</p>
+                        <p class="header__wrapper--kontakt--box__link-text">43-100 Tychy</p>
+                     </div>
+                  </a>
+                  <a class="header__wrapper--kontakt--box" href="tel:+48-513-659-578">
+                     <div class="header__wrapper--kontakt--box__img">
+                        <svg>
+                           <use
+                              xlink:href="img/ikony-basic-wersja-4/icons_sample-004.svg#icon-sample-004-telefon"></use>
+                        </svg>
+                     </div>
+                     <div class="header__wrapper--kontakt--box__text">
+                        <h5 class="heading-5__header">Zadźwoń do nas:</h5>
+                        <p class="header__wrapper--kontakt--box__link-text">513-659-578</p>
+                        <p class="header__wrapper--kontakt--box__link-text">8:00 - 19:00</p>
+                     </div>
+                  </a>
+                  <div class="header__wrapper--kontakt--box" href="">
+                     <div class="header__wrapper--kontakt--box__img">
+                        <svg>
+                           <use
+                              xlink:href="img/ikony-basic-wersja-4/icons_sample-004.svg#icon-sample-004-clock"></use>
+                        </svg>
+                     </div>
+                     <div class="header__wrapper--kontakt--box__text">
+                        <h5 class="heading-5__header">Godziny otwarcia:</h5>
+                        <p class="header__wrapper--kontakt--box__link-text">Pn-Pt 8:00 - 20:00</p>
+                     </div>
+                  </div>
+                  <a class="header__wrapper--kontakt--box" href="">
+                     <div class="header__wrapper--kontakt--box__img">
+                        <svg>
+                           <use
+                              xlink:href="img/ikony-basic-wersja-4/icons_sample-004.svg#icon-sample-004-mail"></use>
+                        </svg>
+                     </div>
+                     <div class="header__wrapper--kontakt--box__text">
+                        <h5 class="heading-5__header">Napisz do nas:</h5>
+                        <p class="header__wrapper--kontakt--box__link-text">tychy@fizjo-family.pl</p>
+                     </div>
+                  </a>
+               </div>
+               <div class="header__wrapper--nazwa">
+                  <img
+                     src="./img/index/fizjofamily-logo-circle.svg"
+                     alt=""
+                     class="header__wrapper--nazwa__img" />
+                  <div class="header__wrapper--nazwa__text">
+                     <h1 class="heading-1__header">
+                        <span>Specjalistyczna</span><br />
+                        Poradnia Rehabilitacji Dziecięcej <br /><br />
+                        <span>Niepubliczna</span><br />Poradnia Psychologiczno-Pedagogiczna
+                     </h1>
+                  </div>
+                  <div class="header__wrapper--nazwa"></div>
+               </div>
+            </div>
+            <img class="header__main-img" src="img/index/fizjofamily-header-index.jpg" alt="" />
+            <img src="img/index/fizjofamily-shape-header.svg" alt="" class="header__img" />
+         </div>
+      </header>
+      <section class="kontakt">
+         <div class="kontakt__wrapper">
+            <h2 class="heading-2__kontakt"><span>Umów się</span> na wizytę</h2>
+            <div class="kontakt__box">
+               <div class="kontakt__box--left">
+                  <p class="kontakt__box--left-opis">
+                     Poradnia czynna jest od poniedziałku do piątku od 8.00 - 20.00
+                  </p>
+                  <p class="kontakt__box--left-opis">
+                     Bezpłatny parking dostępny jest na terenie przynależnyn do budynku w którym mieści się
+                     Poradnia. Parking nie jest strzeżony
+                  </p>
+                  <div class="kontakt__box--left-link">
+                     <a
+                        target="_blank"
+                        class="header__wrapper--kontakt--box"
+                        href="https://goo.gl/maps/QaXbHsUTzvYzDrRW9">
+                        <div class="header__wrapper--kontakt--box__img">
+                           <svg>
+                              <use
+                                 xlink:href="img/ikony-basic-wersja-4/icons_sample-004.svg#icon-sample-004-adres"></use>
+                           </svg>
+                        </div>
+                        <div class="header__wrapper--kontakt--box__text">
+                           <p class="header__wrapper--kontakt--box__link-text">Ul. Przemysłowa 55</p>
+                           <p class="header__wrapper--kontakt--box__link-text">43-100 Tychy</p>
+                        </div>
+                     </a>
+                     <a class="header__wrapper--kontakt--box" href="tel:+48-513-659-578">
+                        <div class="header__wrapper--kontakt--box__img">
+                           <svg>
+                              <use
+                                 xlink:href="img/ikony-basic-wersja-4/icons_sample-004.svg#icon-sample-004-telefon"></use>
+                           </svg>
+                        </div>
+                        <div class="header__wrapper--kontakt--box__text">
+                           <p class="header__wrapper--kontakt--box__link-text">513-659-578</p>
+                           <p class="header__wrapper--kontakt--box__link-text">8:00 - 19:00</p>
+                        </div>
+                     </a>
+                     <div class="header__wrapper--kontakt--box" href="">
+                        <div class="header__wrapper--kontakt--box__img">
+                           <svg>
+                              <use
+                                 xlink:href="img/ikony-basic-wersja-4/icons_sample-004.svg#icon-sample-004-clock"></use>
+                           </svg>
+                        </div>
+                        <div class="header__wrapper--kontakt--box__text">
+                           <p class="header__wrapper--kontakt--box__link-text">Pn-Pt 8:00 - 20:00</p>
+                        </div>
+                     </div>
+                     <a class="header__wrapper--kontakt--box" href="">
+                        <div class="header__wrapper--kontakt--box__img">
+                           <svg>
+                              <use
+                                 xlink:href="img/ikony-basic-wersja-4/icons_sample-004.svg#icon-sample-004-mail"></use>
+                           </svg>
+                        </div>
+                        <div class="header__wrapper--kontakt--box__text">
+                           <p class="header__wrapper--kontakt--box__link-text">tychy@fizjo-family.pl</p>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+               <div class="kontakt__box--right">
+                  <form class="kontakt__form">
+                     <!-- imie i nazwisko -->
+                     <label for="imie" class="kontakt__form--label kontakt__form--label-1z2">
+                        <input
+                           type="text"
+                           class="kontakt__form--label-input"
+                           name="imie"
+                           pattern="[a-zA-ZąćęłńóśźżĄĘŁŃÓŚŹŻ]{3,}"
+                           placeholder="Imie"
+                           required
+                           title="min. długość 3 litery" />
+                        <span
+                           class="kontakt__form--label-img"
+                           src="./img/ikony-basic-wersja-4/icon-sample-004-checked.svg"></span>
+                     </label>
+                     <!-- telefon -->
+                     <label for="telefon" class="kontakt__form--label kontakt__form--label-1z2">
+                        <input
+                           class="kontakt__form--label-input"
+                           name="telefon"
+                           pattern="[0-9]{3}([., -]?)[0-9]{3}\1[0-9]{3}$"
+                           placeholder="Numer kontaktowy"
+                           required
+                           title="Proszę podaj numer kontaktowy w formacie 552-335-222 lub 552335222"
+                           type="tel" />
+                        <span
+                           class="kontakt__form--label-img"
+                           src="./img/ikony-basic-wersja-4/icon-sample-004-checked.svg"></span>
+                     </label>
+                     <!-- e-mail -->
+                     <label for="email" class="kontakt__form--label">
+                        <input
+                           class="kontakt__form--label-input"
+                           name="email"
+                           pattern="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$"
+                           placeholder="Twój adres e-mail"
+                           required
+                           type="email" />
+                        <span
+                           class="kontakt__form--label-img"
+                           src="./img/ikony-basic-wersja-4/icon-sample-004-checked.svg"></span>
+                     </label>
+                     <!-- treść wiadomości -->
+                     <label for="wiadomosc" class="kontakt__form--label">
+                        <textarea
+                           class="kontakt__form--input kontakt__form--textarea"
+                           minlength="5"
+                           name="wiadomosc"
+                           placeholder="Twoja wiadomość"
+                           required
+                           rows="5"
+                           title="wiadomość nie może być krótsza niż 5 znaków"></textarea>
+                        <span
+                           class="kontakt__form--label-img"
+                           src="./img/ikony-basic-wersja-4/icon-sample-004-checked.svg"></span>
+                     </label>
+                     <!-- RODO -->
+                     <label class="kontakt__form--label-rodo" for="rodo">
+                        <input type="checkbox" name="rodo" required />
+                        <p class="kontakt__form--label-rodo--text">
+                           Wyrażam zgodę na przetwarzanie moich danych osobowych podanych w formularzu
+                           kontaktowym przez Fizjo-Family Rafał Andrzejczak z siedzibą przy ul. Przemysłowej
+                           55, 43-100 Tychy, <span>NIP: 929-172-</span>87-67 w celu kontaktu w związku z
+                           przesłanym za pośrednictwem formularza kontaktowego zgłoszeniem. Zgodę można
+                           wycofać w dowolnym momencie bez wpływu na zgodność z prawem przetwarzania danych
+                           osobowych, którego dokonano na podstawie zgody przed jej wycofaniem.
+                           Administratorem danych osobowych podanych w formularzu jest Fizjo-Family ul.
+                           Przemysłowa 55, 43-100 Tychy.
+                        </p>
+                     </label>
+                     <button class="button" type="submit" value="Wyślij">Wyślij wiadomość</button>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </section>
+      <footer class="footer">
+         <img src="./img/fale/fala-szara-top.png" alt="" class="oferta-index__fala-up" />
+         <div class="footer__wrapper">
+            <h5 class="footer__wrapper--h5">Fizjo-Family</h5>
+            <p class="footer__wrapper--text">
+               <span>Płatność za zabiegi przyjmujemy zarówno gotówką jak i kartą.</span>
+               <span>Istnieje możliwość wykupienia pakietu wizyt.</span>
+               <span>Świadczymy usługi w ramach wcześnego wspomagania rozwoju (WWR).</span>
+            </p>
+            <!-- Social media -->
+            <div class="footer__wrapper--box">
+               <a href="#" class="footer__wrapper--box-link">
+                  <svg class="footer__wrapper--box-link__icon">
+                     <use
+                        xlink:href="img/socialMedia/icons_social_media_sample-002.svg#icon-social-media-sample-002-facebook"></use>
+                  </svg>
+               </a>
+               <a href="" class="footer__wrapper--box-link">
+                  <svg class="footer__wrapper--box-link__icon">
+                     <use
+                        xlink:href="img/socialMedia/icons_social_media_sample-002.svg#icon-social-media-sample-002-instagram"></use>
+                  </svg>
+               </a>
+            </div>
+            <!-- Koniec social media -->
+            <img src="./img/index/fizjofamily-logo-footer.svg" alt="" class="footer__wrapper--logo" />
+            <h6 class="footer__wrapper--h6">Mapa strony</h6>
+            <!-- Start Anchor -->
+            <div class="footer__wrapper--anchor">
+               <ul class="footer__wrapper--anchor-list">
+                  <li class="footer__wrapper--anchor-item">
+                     <a
+                        href=""
+                        class="footer__wrapper--anchor-item--link footer__wrapper--anchor-item--link-home"
+                        ><span>Strona główna</span></a
+                     >
+                  </li>
+                  <li class="footer__wrapper--anchor-item">
+                     <a
+                        href=""
+                        class="footer__wrapper--anchor-item--link footer__wrapper--anchor-item--link-oFirmie"
+                        ><span>O firmie</span></a
+                     >
+                  </li>
+                  <li class="footer__wrapper--anchor-item">
+                     <a
+                        href=""
+                        class="footer__wrapper--anchor-item--link footer__wrapper--anchor-item--link-oferta"
+                        ><span>Oferta</span></a
+                     >
+                  </li>
+                  <li class="footer__wrapper--anchor-item">
+                     <a
+                        href=""
+                        class="footer__wrapper--anchor-item--link footer__wrapper--anchor-item--link-galeria"
+                        ><span>Galeria</span></a
+                     >
+                  </li>
+                  <li class="footer__wrapper--anchor-item">
+                     <a
+                        href=""
+                        class="footer__wrapper--anchor-item--link footer__wrapper--anchor-item--link-współpraca"
+                        ><span>Współpraca</span></a
+                     >
+                  </li>
+                  <li class="footer__wrapper--anchor-item">
+                     <a
+                        href=""
+                        class="footer__wrapper--anchor-item--link footer__wrapper--anchor-item--link-kontakt"
+                        ><span>Kontakt</span></a
+                     >
+                  </li>
+               </ul>
+               <!-- End Anchor -->
+            </div>
+         </div>
+      </footer>
+      <div class="nav__overlay nav__display"></div>
+      <!-- <img
+         class="upArrow"
+         src="./img/ikony-basic-wersja-4/icon-sample-004-top.svg"
+      /> -->
+
+      <svg class="upArrow">
+         <use xlink:href="img/index/strzałka-top/svg/fizjofamily-top.svg#Warstwa_1"></use>
+      </svg>
+   </body>
+</html>

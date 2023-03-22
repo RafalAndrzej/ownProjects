@@ -1,0 +1,29 @@
+html {
+   font-size: 62.5%;
+
+   @include respond(tablet) {
+      font-size: 56.25%;
+   }
+   @include respond(phone-landscape) {
+      font-size: 50%;
+   }
+}
+:root {
+   --color-orange: rgba(243, 128, 49);
+   --color-orange-dark: rgba(214, 108, 31);
+   --color-white: #fff;
+   --color-darkWhite: rgba(241, 241, 241);
+}
+
+body {
+   font-family: 'Lato', sans-serif;
+   font-weight: 400;
+   box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+   margin: 0;
+   padding: 0;
+   box-sizing: inherit;
+}

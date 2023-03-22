@@ -1,0 +1,14 @@
+.upArrow {
+   position: fixed;
+   bottom: 2rem;
+   right: 2rem;
+   display: block;
+   width: 5rem;
+   height: 5rem;
+   fill: var(--color-orange);
+   background-color: white;
+   border-radius: 100%;
+   border: none;
+   z-index: 100;
+   cursor: pointer;
+}

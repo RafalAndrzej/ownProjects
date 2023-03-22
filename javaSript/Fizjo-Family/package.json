@@ -1,0 +1,24 @@
+{
+   "name": "fizjo-family",
+   "version": "1.0.0",
+   "description": "",
+   "browserslist": [
+      "last 3 version",
+      "> 0.5%",
+      "not dead",
+      "IE 10"
+   ],
+   "scripts": {
+      "start": "parcel index.html",
+      "build": "parcel build index.html --dist-dir ./dist"
+   },
+   "license": "ISC",
+   "bugs": {
+      "url": "https://github.com/rafandrzej/Fizjo-Family/issues"
+   },
+   "devDependencies": {
+      "@parcel/resolver-glob": "^2.6.2",
+      "@parcel/transformer-sass": "^2.6.2",
+      "parcel": "^2.6.2"
+   }
+}
